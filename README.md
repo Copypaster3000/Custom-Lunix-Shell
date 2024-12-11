@@ -51,11 +51,6 @@ Run PSUsh from the terminal:
 ./psush
 ```
 
-For verbose debugging:
-```bash
-./psush -v
-```
-
 ---
 
 ## Requirements
