@@ -1,7 +1,5 @@
 #Makefile
 #Drake Wheeler
-#CS 333
-#Lab4
 
 CC = gcc
 DEBUG = -g -DNOISY_DEBUG
@@ -33,15 +31,6 @@ cmd_parse.o: cmd_parse.c
 #and print out the debug statements while the program is running
 debug: CFLAGS += $(DEBUG)
 debug: all
-
-#this rule handles the git commands. If a get repo doesnt exist, it creates one
-#it adds all .c, .h, and Makefile changes to the repo and commits with message
-#call with 'make git'
-git:
-	if [ ! -d .git ] ; then git init; fi
-	git add *.[ch] ?akefile
-	git commit -m "lazy auto makefile git commit"
-
 
 clean cls:
 	rm -f $(PROGS) *.o *~ \#*
